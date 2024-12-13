@@ -12,7 +12,24 @@ By leveraging data visualization techniques, the project will transform raw call
 The Call Centre Manager lacks a clear and effective visualization of the center's performance metrics. This makes it challenging to identify trends, understand agent and customer behavior, and make informed decisions. A visually engaging and data-driven dashboard is needed to provide clarity and actionable insights.
 
 ### Skills Demonstrated
-  - Cleaned and prepared raw call center data for analysis, ensuring accuracy and consistency using power querry editor.
+  - Data cleaning and transformation.
+  - **DAX (Data Analysis Expressions)** .
+ - **Data Visualization**.
+ - Defining KPIs
+
+### Data sources
+
+Data sets for this project were provided by [PWC](https://www.pwc.ch/en/careers-with-pwc/students/virtual-case-experience.html) and call centre data sets: 
+[datasets](01 Call-Center-Dataset.xlsx)
+The data for this project 
+
+ ### Data Transformation and Modelling
+Cleaned and prepared raw call center data for analysis, ensuring accuracy and consistency using power querry editor.
+  - Replaced missing call durations with "0" for abandoned calls.
+  - Extracted month from the date collumn.
+  - Unified Data Formats in Power Query to Ensure Consistency.
+
+  ### Data Anaysis and Visualization
   - Performed statistical calculations to analyze trends like  rates and customer satisfaction scores.
   - Utilized **DAX (Data Analysis Expressions)** to calculate measures, such as average speed of answer and agent performance metrics.
     - `Answered calls = CALCULATE(
@@ -23,7 +40,7 @@ FILTER('Call Center','Call Center'[Answered (Y/N)] ="Y"))`
 AVERAGE('Call Center'[Satisfaction rating])`
  - **Data Visualization** Designed an interactive and visually engaging dashboard to showcase key performance metrics.
 
-### Data sources
+
 
 
 
