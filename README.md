@@ -6,7 +6,7 @@ The primary goal is to analyze and present data such as call volumes, answered c
 By leveraging data visualization techniques, the project will transform raw call center data into actionable insights. This dashboard will enable the Call Centre Manager to monitor performance efficiently, identify areas for improvement, and support strategic discussions with management. The ultimate objective is to provide a clear and accurate representation of call center trends to drive better outcomes and improve customer experience.
 
 
-![Call centr](Call centre.jpg)
+![Call centre](Call centre.jpg)
 
 ### Problem Statement
 The Call Centre Manager lacks clear and effective performance visualizations, making it difficult to monitor trends, understand agent and customer behavior, and make data-driven decisions. A robust, data-driven dashboard is essential to bridge this gap and improve operational insights.
@@ -73,15 +73,5 @@ Visualizations:
        **Recommendation**
       Conduct customer feedback analysis to identify recurring issues. Focus on improving resolution times and training agents on empathy and problem-solving
 
-  - **Agent Performance**
-    
-	**Agents with notable performance**
-  Greg has the highest average satisfaction rate (3.43) and above-average resolution calls.
-	Jim also handles a large call volume with consistent stats.
-
-	**Agents with room for improvement**
-  Martha has a lower resolution count (49.49%) and lower satisfaction rate.
-
-    **Recommendation**
-    Offer targeted coaching to Martha and others falling below benchmarks.
+  
 
