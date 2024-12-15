@@ -1,15 +1,15 @@
 ## Call Centre Analysis
 
-### Project Overwiew
+### Project Overview
 The Call Centre Dashboard project aims to deliver a comprehensive and interactive visualization of key performance metrics to enhance decision-making and operational transparency.
 The primary goal is to analyze and present data such as call volumes, answered calls, resolved calls, customer satisfaction levels, and agents statistics.
 By leveraging data visualization techniques, the project will transform raw call center data into actionable insights. This dashboard will enable the Call Centre Manager to monitor performance efficiently, identify areas for improvement, and support strategic discussions with management. The ultimate objective is to provide a clear and accurate representation of call center trends to drive better outcomes and improve customer experience.
 
 
-![Dashboard](Dashboard_png.PNG)
+![Call centr](Call centre.jpg)
 
 ### Problem Statement
-The Call Centre Manager lacks a clear and effective visualization of the center's performance metrics. This makes it challenging to identify trends, understand agent and customer behavior, and make informed decisions. A visually engaging and data-driven dashboard is needed to provide clarity and actionable insights.
+The Call Centre Manager lacks clear and effective performance visualizations, making it difficult to monitor trends, understand agent and customer behavior, and make data-driven decisions. A robust, data-driven dashboard is essential to bridge this gap and improve operational insights.
 
 ### Skills Demonstrated
   - Data cleaning and transformation.
@@ -24,29 +24,64 @@ Data sets for this project were provided by [PWC](https://www.pwc.ch/en/careers-
 The data for this project 
 
  ### Data Transformation and Modelling
-Cleaned and prepared raw call center data for analysis, ensuring accuracy and consistency using power querry editor.
-  - Replaced missing call durations with "0" for abandoned calls.
-  - Extracted month from the date collumn.
-  - Unified Data Formats in Power Query to Ensure Consistency.
+  - Used Power Query Editor to clean and prepare raw call center data for analysis..
+  - Addressed missing data issues by replacing blank call durations with "0" for abandoned calls.
+  - Extracted month from the date column for trend analysis.
+  - Standardized and unified data formats to ensure consistency and accuracy.
+  - The data was in one table so there was no need to model it.
 
-  ### Data Anaysis and Visualization
-  - Performed statistical calculations to analyze trends like  rates and customer satisfaction scores.
-  - Utilized **DAX (Data Analysis Expressions)** to calculate measures, such as average speed of answer and agent performance metrics.
-    - `Answered calls = CALCULATE(
+  ### Data Anaysis and Visualization  
+  - Established key performance metrics to measure call center performance, such as Answered Calls Rate, Resolution Rate, Average Speed of Answer, and Satisfaction Scores.
+  - Utilized **DAX (Data Analysis Expressions)** to create calculated measures to analyze call center performance, such
+  - `Answered calls = CALCULATE(
 DISTINCTCOUNT('Call Center'[Call Id]),
 FILTER('Call Center','Call Center'[Answered (Y/N)] ="Y"))`
      - `# of resolved = Calculate(distinctcount('Call Center'[Call Id]),Filter('Call Center','Call Center'[Resolved]="Y"))`
      - `Overal satisfaction = 
 AVERAGE('Call Center'[Satisfaction rating])`
- - **Data Visualization** Designed an interactive and visually engaging dashboard to showcase key performance metrics.
+ - **Data Visualization** Designed an interactive and user-friendly dashboard in Power BI that includes:
+Key performance indicators (KPIs) like Answered Calls, Resolved Calls, Average Speed of Answer, and Average Satisfaction Rate.
+Visualizations:
+    - Pie Charts for Answered vs. Unanswered Calls and Resolved vs. Unresolved Calls.
+    - Bar Charts for monthly call trends.
+    - Tables for agent performance metrics.
+    - Filters for Agent, Topic, and Date Range to allow for dynamic exploration of data.
+  
+      ![Dashboard](Dashboard_png.PNG)
+  
+   ### Conclusion and recommendations
+   ### Key Insights
+ - **Answered Calls vs Unanswered Calls**
+	  Answered Calls account for approximately 81.98% of the total calls, while 18.02% remain unanswered.
+	**Recommendation**
+    Investigate the cause of the 18% unanswered calls.
 
+ -	**Resolved Calls**
+	    Resolved Calls make up 72.92%, with 27.08% unresolved.
 
+    **Recommendation**
+      Focus on understanding why 27% of the calls are unresolved. Implement additional agent training or guidelines to improve resolution rates.
 
+  - **Average Speed of Answer**
+	    The average speed of answer is 67.52 seconds, which seems relatively high for a call center environment.
 
+     **Recommendation**
+      Aim to reduce the average speed of answer by optimizing staffing schedules, implementing automated responses for simple queries, or introducing a call-back option.
 
+ - **Average Satisfaction Rate** 
+	    The overall average satisfaction rate is 3.40 while target is 4.5, which is moderate but leaves room for improvement.
+       **Recommendation**
+      Conduct customer feedback analysis to identify recurring issues. Focus on improving resolution times and training agents on empathy and problem-solving
 
+  - **Agent Performance**
+    
+	**Agents with notable performance**
+  Greg has the highest average satisfaction rate (3.43) and above-average resolution calls.
+	Jim also handles a large call volume with consistent stats.
 
+	**Agents with room for improvement**
+  Martha has a lower resolution count (49.49%) and lower satisfaction rate.
 
-
-
+    **Recommendation**
+    Offer targeted coaching to Martha and others falling below benchmarks.
 
