@@ -5,23 +5,22 @@ The Call Centre Dashboard project aims to deliver a comprehensive and interactiv
 The primary goal is to analyze and present data such as call volumes, answered calls, resolved calls, customer satisfaction levels, and agents statistics.
 By leveraging data visualization techniques, the project will transform raw call center data into actionable insights. This dashboard will enable the Call Centre Manager to monitor performance efficiently, identify areas for improvement, and support strategic discussions with management. The ultimate objective is to provide a clear and accurate representation of call center trends to drive better outcomes and improve customer experience.
 
-
-![Call centre](Call centre.jpg)
+![Call centre](Call_centre.jpg)
 
 ### Problem Statement
 The Call Centre Manager lacks clear and effective performance visualizations, making it difficult to monitor trends, understand agent and customer behavior, and make data-driven decisions. A robust, data-driven dashboard is essential to bridge this gap and improve operational insights.
 
 ### Skills Demonstrated
-  - Data cleaning and transformation.
-  - **DAX (Data Analysis Expressions)** .
+  - Data cleaning and transformation in power query editor.
+  - **DAX (Data Analysis Expressions)**.
  - **Data Visualization**.
- - Defining KPIs
+ - Defining KPIs.
 
 ### Data sources
 
 Data sets for this project were provided by [PWC](https://www.pwc.ch/en/careers-with-pwc/students/virtual-case-experience.html) and call centre data sets: 
-[datasets](01 Call-Center-Dataset.xlsx)
-The data for this project 
+[datasets](Call-Center-Dataset.xlsx)
+The dataset for this project has ten columns and five thousand rows.
 
  ### Data Transformation and Modelling
   - Used Power Query Editor to clean and prepare raw call center data for analysis..
@@ -33,10 +32,10 @@ The data for this project
   ### Data Anaysis and Visualization  
   - Established key performance metrics to measure call center performance, such as Answered Calls Rate, Resolution Rate, Average Speed of Answer, and Satisfaction Scores.
   - Utilized **DAX (Data Analysis Expressions)** to create calculated measures to analyze call center performance, such
-  - `Answered calls = CALCULATE(
+  	- `Answered calls = CALCULATE(
 DISTINCTCOUNT('Call Center'[Call Id]),
-FILTER('Call Center','Call Center'[Answered (Y/N)] ="Y"))`
-     - `# of resolved = Calculate(distinctcount('Call Center'[Call Id]),Filter('Call Center','Call Center'[Resolved]="Y"))`
+FILTER('Call Center','Call Center'[Answered (Y/N)] ="Yes"))`
+     - `# of resolved = Calculate(distinctcount('Call Center'[Call Id]),Filter('Call Center','Call Center'[Resolved]="Yes"))`
      - `Overal satisfaction = 
 AVERAGE('Call Center'[Satisfaction rating])`
  - **Data Visualization** Designed an interactive and user-friendly dashboard in Power BI that includes:
@@ -47,7 +46,9 @@ Visualizations:
     - Tables for agent performance metrics.
     - Filters for Agent, Topic, and Date Range to allow for dynamic exploration of data.
   
-      ![Dashboard](Dashboard_png.PNG)
+      ![Dashboard](Dashboard.PNG)
+
+		[Dashboard](Call-Center-Dashboard.pbix)
   
    ### Conclusion and recommendations
    ### Key Insights
@@ -56,7 +57,7 @@ Visualizations:
 	**Recommendation**
     Investigate the cause of the 18% unanswered calls.
 
- -	**Resolved Calls**
+   **Resolved Calls**
 	    Resolved Calls make up 72.92%, with 27.08% unresolved.
 
     **Recommendation**
