@@ -13,7 +13,7 @@ The Call Centre Manager lacks clear and effective performance visualizations, ma
 ### Skills Demonstrated
   - Data cleaning and transformation in power query editor.
   - **DAX (Data Analysis Expressions)**.
- - **Data Visualization**.
+ - **Data Visualization in power BI**.
  - Defining KPIs.
 
 ### Data sources
@@ -27,7 +27,7 @@ The dataset for this project has ten columns and five thousand rows.
   - Addressed missing data issues by replacing blank call durations with "0" for abandoned calls.
   - Extracted month from the date column for trend analysis.
   - Standardized and unified data formats to ensure consistency and accuracy.
-  - The data was in one table so there was no need to model it.
+  - The data was in one table so there was no need to model the data.
 
   ### Data Anaysis and Visualization  
   - Established key performance metrics to measure call center performance, such as Answered Calls Rate, Resolution Rate, Average Speed of Answer, and Satisfaction Scores.
