@@ -23,6 +23,7 @@ Data sets for this project were provided by [PWC](https://www.pwc.ch/en/careers-
 The dataset for this project has ten columns and five thousand rows.
 
  ### Data Transformation and Modelling
+ 
   - Used Power Query Editor to clean and prepare raw call center data for analysis..
   - Addressed missing data issues by replacing blank call durations with "0" for abandoned calls.
   - Extracted month from the date column for trend analysis.
@@ -30,6 +31,7 @@ The dataset for this project has ten columns and five thousand rows.
   - The data was in one table so there was no need to model the data.
 
   ### Data Anaysis and Visualization  
+  
   - Established key performance metrics to measure call center performance, such as Answered Calls Rate, Resolution Rate, Average Speed of Answer, and Satisfaction Scores.
   - Utilized **DAX (Data Analysis Expressions)** to create calculated measures to analyze call center performance, such
   	- `Answered calls = CALCULATE(
@@ -38,7 +40,9 @@ FILTER('Call Center','Call Center'[Answered (Y/N)] ="Yes"))`
      - `# of resolved = Calculate(distinctcount('Call Center'[Call Id]),Filter('Call Center','Call Center'[Resolved]="Yes"))`
      - `Overal satisfaction = 
 AVERAGE('Call Center'[Satisfaction rating])`
- - **Data Visualization** Designed an interactive and user-friendly dashboard in Power BI that includes:
+ - **Data Visualization**
+
+   Designed an interactive and user-friendly dashboard in Power BI that includes:
 Key performance indicators (KPIs) like Answered Calls, Resolved Calls, Average Speed of Answer, and Average Satisfaction Rate.
 Visualizations:
     - Pie Charts for Answered vs. Unanswered Calls and Resolved vs. Unresolved Calls.
@@ -51,9 +55,11 @@ Visualizations:
 		[Dashboard](Call-Center-Dashboard.pbix)
   
    ### Conclusion and recommendations
+   
    ### Key Insights
  - **Answered Calls vs Unanswered Calls**
 	  Answered Calls account for approximately 81.98% of the total calls, while 18.02% remain unanswered.
+   
 	**Recommendation**
     Investigate the cause of the 18% unanswered calls.
 
@@ -71,7 +77,9 @@ Visualizations:
 
  - **Average Satisfaction Rate** 
 	    The overall average satisfaction rate is 3.40 while target is 4.5, which is moderate but leaves room for improvement.
-       **Recommendation**
+   
+   **Recommendation**
+   
       Conduct customer feedback analysis to identify recurring issues. Focus on improving resolution times and training agents on empathy and problem-solving
 
   
