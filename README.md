@@ -22,7 +22,7 @@ Data sets for this project were provided by [PWC](https://www.pwc.ch/en/careers-
 [datasets](Call-Center-Dataset.xlsx)
 The dataset for this project has ten columns and five thousand rows.
 
- ### Data Transformation and Modelling
+ ### Data Transformation and Modelling.
  
   - Used Power Query Editor to clean and prepare raw call center data for analysis..
   - Addressed missing data issues by replacing blank call durations with "0" for abandoned calls.
@@ -40,6 +40,7 @@ FILTER('Call Center','Call Center'[Answered (Y/N)] ="Yes"))`
      - `# of resolved = Calculate(distinctcount('Call Center'[Call Id]),Filter('Call Center','Call Center'[Resolved]="Yes"))`
      - `Overal satisfaction = 
 AVERAGE('Call Center'[Satisfaction rating])`
+
  - **Data Visualization**
 
    Designed an interactive and user-friendly dashboard in Power BI that includes:
